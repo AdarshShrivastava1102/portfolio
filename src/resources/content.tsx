@@ -59,8 +59,8 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `Adarsh Shrivastava's Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfolio website showcasing my work as a AI Product Manager`,
+  headline: <>AI Product Leader shipping GenAI Agents</>,
   featured: {
     display: true,
     title: (
@@ -76,40 +76,87 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Adarsh, an AI Product Manager at <InlineCode>Cognizant</InlineCode>, where I shipped 3 GenAI copilots for Fortune-500 clients. Before this — ML at Michelin and BS-VI compliance at Volvo Eicher. IIM-A '24, IIT-G '16.
 </>
   ),
 };
 
-const about: About = {
-  path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
-  tableOfContent: {
-    display: true,
-    subItems: false,
-  },
-  avatar: {
-    display: true,
-  },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
-  intro: {
-    display: true,
-    title: "Introduction",
-    description: (
-      <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
-    ),
-  },
+const about = {
+    label: 'About',
+    title: 'About me',
+    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    tableOfContent: { display: true, subItems: false },
+    avatar: { display: true },
+    calendar: { display: false, link: '' },
+    intro: {
+        display: true,
+        title: 'Introduction',
+        description: <>Adarsh is an AI Product Leader based in Bengaluru, with a passion for building AI products that ship at enterprise scale. His work spans GenAI agents, ML systems, and large-scale digital transformation across automotive and manufacturing.</>
+    },
+    work: {
+        display: true,
+        title: 'Work Experience',
+        experiences: [
+            {
+                company: 'Cognizant',
+                timeframe: 'Jun 2024 – Present',
+                role: 'Manager Consulting — Digital & AI Products',
+                achievements: [
+                    <>Built and deployed 3 AI-driven digital assistants for Fortune-500 clients, cutting manual effort 50%+</>,
+                    <>Drove $30M+ digital transformation programs across automotive and manufacturing</>,
+                    <>Manage $9M client portfolio with 15% YoY growth</>
+                ],
+                images: []
+            },
+            {
+                company: 'Michelin',
+                timeframe: 'Sep 2018 – Mar 2023',
+                role: 'Assistant Manager II — Product Manager & DT',
+                achievements: [
+                    <>Designed ML model with 92% accuracy across 300+ tyre variants</>,
+                    <>Hand-picked for Digital Transformation Task Force</>,
+                    <>Represented India in standardization effort in USA</>
+                ],
+                images: []
+            },
+            {
+                company: 'Volvo Eicher',
+                timeframe: 'Jun 2016 – Aug 2018',
+                role: 'Deputy Manager — Product Owner',
+                achievements: [
+                    <>Convinced CXO panel to approve BS-VI compliance components worth INR 200k/truck</>,
+                    <>Boosted manufacturing productivity 20%, delivering INR 50 Cr revenue growth</>
+                ],
+                images: []
+            }
+        ]
+    },
+    studies: {
+        display: true,
+        title: 'Studies',
+        institutions: [
+            {
+                name: 'Indian Institute of Management Ahmedabad',
+                description: <>MBA · 2023–2024 · Placement Committee (placed 14 students)</>
+            },
+            {
+                name: 'Indian Institute of Technology Guwahati',
+                description: <>MTech · 2014–2016</>
+            }
+        ]
+    },
+    technical: {
+        display: true,
+        title: 'Skills & Tools',
+        skills: [
+            { title: 'AI Product Management', description: <>Building GenAI agents, RAG systems, evals, and copilots for production use</>, images: [] },
+            { title: 'Digital Transformation', description: <>Cloud migration, workflow automation, IoT, change management</>, images: [] },
+            { title: 'Stakeholder Management', description: <>CXO engagement across India, USA, France</>, images: [] }
+        ]
+    }
+}
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -155,7 +202,7 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -169,7 +216,7 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
