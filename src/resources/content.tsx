@@ -7,7 +7,7 @@ type ExperienceImage = {
 
 type SkillTag = {
   icon: string;
-  label: string;
+  name: string;
 };
 
 
