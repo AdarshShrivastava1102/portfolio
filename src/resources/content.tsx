@@ -58,6 +58,11 @@ const home = {
     description: `Portfolio website showcasing my work as an ${person.role}`,
     image: '/images/og/home.jpg',
     headline: <>AI Product Leader shipping GenAI agents for Fortune-500</>,
+    featured: {
+      display: false,
+      title: '',
+      href: '',
+    }
     subline: <>I'm Adarsh, an AI Product Manager at Cognizant, where I shipped 3 GenAI copilots for Fortune-500 clients. IIM-A '24 · IIT-G '16. Building AI products at the intersection of business and technology.</>
 }
 
