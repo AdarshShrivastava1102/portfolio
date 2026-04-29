@@ -36,6 +36,7 @@ const social = [
 
 const home = {
     label: 'Home',
+    path:'/',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as an ${person.role}`,
     headline: <>AI Product Leader shipping GenAI agents for Fortune-500</>,
@@ -44,6 +45,7 @@ const home = {
 
 const about = {
     label: 'About',
+    path: '/about',
     title: 'About me',
     description: `Meet ${person.name}, ${person.role} from Bengaluru, India`,
     tableOfContent: {
@@ -146,18 +148,21 @@ const about = {
 
 const blog = {
     label: 'Blog',
+    path: '/blog',
     title: 'Writing on AI products',
     description: `Read what ${person.name} has been thinking about lately`
 }
 
 const work = {
     label: 'Work',
+    path: '/work',
     title: 'My projects',
     description: `Selected projects and case studies by ${person.name}`
 }
 
 const gallery = {
     label: 'Gallery',
+    path: '/gallery',
     title: 'My photo gallery',
     description: `A photo collection by ${person.name}`,
     images: []
