@@ -5,6 +5,12 @@ type ExperienceImage = {
   height: number;
 };
 
+type SkillTag = {
+  icon: string;
+  label: string;
+};
+
+
 const person = {
     firstName: 'Adarsh',
     lastName:  'Shrivastava',
@@ -141,16 +147,19 @@ const about = {
                 title: 'AI Product Management',
                 description: <>Building GenAI agents, RAG systems, evals, and copilots for production use. Hands-on with Anthropic Claude API, LangChain, and prompt engineering.</>,
                 images: [] as ExperienceImage[],
+                tags: [] as SkillTag[],
             },
             {
                 title: 'Digital Transformation',
                 description: <>Cloud migration (AWS), workflow automation, IoT deployments, change management at scale across multi-site enterprise environments.</>,
                 images: [] as ExperienceImage[],
+                tags: [] as SkillTag[],
             },
             {
                 title: 'Stakeholder Management',
                 description: <>CXO-level engagement across India, USA, and France. Cross-functional team leadership in 10+ member squads using Agile/SAFe.</>,
                 images: [] as ExperienceImage[],
+                tags: [] as SkillTag[],
             }
         ]
     }
