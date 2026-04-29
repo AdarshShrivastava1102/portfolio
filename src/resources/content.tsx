@@ -21,16 +21,19 @@ const social = [
         name: 'GitHub',
         icon: 'github',
         link: 'https://github.com/adarsh-shrivastava',
+        essential: true,
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
         link: 'https://www.linkedin.com/in/adarsh-shrivastava/',
+        essential: true,
     },
     {
         name: 'Email',
         icon: 'email',
         link: 'mailto:x23adarshs@iima.ac.in',
+        essential: true,
     },
 ]
 
