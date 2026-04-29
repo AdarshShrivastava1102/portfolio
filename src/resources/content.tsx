@@ -56,7 +56,7 @@ const home = {
     path:'/',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as an ${person.role}`,
-    image: '/images/og/home.jpg'
+    image: '/images/og/home.jpg',
     headline: <>AI Product Leader shipping GenAI agents for Fortune-500</>,
     subline: <>I'm Adarsh, an AI Product Manager at Cognizant, where I shipped 3 GenAI copilots for Fortune-500 clients. IIM-A '24 · IIT-G '16. Building AI products at the intersection of business and technology.</>
 }
@@ -66,6 +66,7 @@ const about = {
     path: '/about',
     title: 'About me',
     description: `Meet ${person.name}, ${person.role} from Bengaluru, India`,
+    image: '/images/og/about.jpg',
     tableOfContent: {
         display: true,
         subItems: false
@@ -171,14 +172,16 @@ const blog = {
     label: 'Blog',
     path: '/blog',
     title: 'Writing on AI products',
-    description: `Read what ${person.name} has been thinking about lately`
+    description: `Read what ${person.name} has been thinking about lately`,
+    image: '/images/og/blog.jpg'
 }
 
 const work = {
     label: 'Work',
     path: '/work',
     title: 'My projects',
-    description: `Selected projects and case studies by ${person.name}`
+    description: `Selected projects and case studies by ${person.name}`,
+    image: '/images/og/work.jpg'
 }
 
 const gallery = {
@@ -186,6 +189,7 @@ const gallery = {
     path: '/gallery',
     title: 'My photo gallery',
     description: `A photo collection by ${person.name}`,
+    image: '/images/og/gallery.jpg',
     images: [
       {
         src: '/images/avatar.jpg',
