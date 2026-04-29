@@ -62,7 +62,7 @@ const home = {
       display: false,
       title: '',
       href: '',
-    }
+    },
     subline: <>I'm Adarsh, an AI Product Manager at Cognizant, where I shipped 3 GenAI copilots for Fortune-500 clients. IIM-A '24 · IIT-G '16. Building AI products at the intersection of business and technology.</>
 }
 
