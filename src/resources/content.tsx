@@ -20,7 +20,8 @@ const person = {
     role:      'AI Product Manager',
     avatar:    '/images/avatar.jpg',
     location:  'Asia/Kolkata',
-    languages: ['English', 'Hindi']
+    languages: ['English', 'Hindi'],
+    email: 'x23adarshs@iima.ac.in'
 }
 
 const newsletter = {
