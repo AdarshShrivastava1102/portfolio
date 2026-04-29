@@ -1,3 +1,10 @@
+type ExperienceImage = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+
 const person = {
     firstName: 'Adarsh',
     lastName:  'Shrivastava',
@@ -81,6 +88,7 @@ const about = {
                     <>Driving 15% YoY growth on a $9M client portfolio; engaging with VPs and CXOs on quarterly progress and new revenue streams</>,
                     <>Led end-to-end product lifecycle of a $30M+ invoice platform — owning BRDs, backlogs, prioritization across a 10-member cross-functional team</>
                 ],
+                images: [] as ExperienceImage[],
             },
             {
                 company: 'Michelin',
@@ -92,6 +100,7 @@ const about = {
                     <>Co-developed a proprietary simulation product adopted across Michelin's design team, cutting analysis time 50%</>,
                     <>Represented India in standardization effort in USA, reducing product offerings 40% to streamline global operations</>
                 ],
+                images: [] as ExperienceImage[],
             },
             {
                 company: 'Volvo Eicher Commercial Vehicles',
@@ -102,6 +111,7 @@ const about = {
                     <>Boosted manufacturing productivity 20% resolving production line issues, delivering INR 50 Cr revenue growth</>,
                     <>Reduced field complaints 60% through Root Cause Analysis (RCA), improving customer satisfaction</>
                 ],
+                images: [] as ExperienceImage[],
             }
         ]
     },
@@ -130,14 +140,17 @@ const about = {
             {
                 title: 'AI Product Management',
                 description: <>Building GenAI agents, RAG systems, evals, and copilots for production use. Hands-on with Anthropic Claude API, LangChain, and prompt engineering.</>,
+                images: [] as ExperienceImage[],
             },
             {
                 title: 'Digital Transformation',
                 description: <>Cloud migration (AWS), workflow automation, IoT deployments, change management at scale across multi-site enterprise environments.</>,
+                images: [] as ExperienceImage[],
             },
             {
                 title: 'Stakeholder Management',
                 description: <>CXO-level engagement across India, USA, and France. Cross-functional team leadership in 10+ member squads using Agile/SAFe.</>,
+                images: [] as ExperienceImage[],
             }
         ]
     }
